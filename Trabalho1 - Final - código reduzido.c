@@ -120,18 +120,18 @@ double angulo;
 					if(resposta_unidade==1){
 						printf("\nDigite o angulo em graus: ");
 						scanf("%lf", &angulo);
-						if(fabs(Tangente(angulo * M_PI / 180))>57.2900)
-						printf("Valor inserido muito proximo de 90 graus, o qual nao ha existencia de tangente. Comece o calculo novamente");
+							if(fabs(Tangente(angulo * M_PI / 180))>57.2900)
+								printf("Valor inserido muito proximo de 90 graus, o qual nao ha existencia de tangente. Comece o calculo novamente");
 						else
-						printf("Tangente de %.5lf graus = %.5lf\n", angulo, Tangente(angulo * M_PI / 180));
+							printf("Tangente de %.5lf graus = %.5lf\n", angulo, Tangente(angulo * M_PI / 180));
 					}
 					else if(resposta_unidade==2){
 						printf("\nDigite o angulo em rad: ");
 						scanf("%lf", &angulo);
-						if(fabs(Tangente(angulo))>57.2900)
-						printf("Valor inserido muito proximo de 90 graus, o qual nao ha existencia de tangente. Comece o calculo novamente");
+							if(fabs(Tangente(angulo))>57.2900)
+								printf("Valor inserido muito proximo de 90 graus, o qual nao ha existencia de tangente. Comece o calculo novamente");
 						else
-						printf("Tangente de %.5lf rad = %.5lf\n", angulo, Tangente(angulo));
+							printf("Tangente de %.5lf rad = %.5lf\n", angulo, Tangente(angulo));
 					}
 					else 
 						printf("\nOpcao invalida. Digite novamente: ");
@@ -148,18 +148,18 @@ double angulo;
 					if(resposta_unidade==1){
 						printf("\nDigite o angulo em graus: ");
 						scanf("%lf", &angulo);
-						if(angulo==90 || angulo==270)
-						printf("Nao ha secante no angulo inserido. Comece o calculo novamente.");
+							if(angulo==90 || angulo==270)
+								printf("Nao ha secante no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Secante de %.5lf graus = %.5lf\n", angulo, Secante(angulo * M_PI / 180));
+							printf("Secante de %.5lf graus = %.5lf\n", angulo, Secante(angulo * M_PI / 180));
 					}
 					else if(resposta_unidade==2){
 						printf("\nDigite o angulo em rad: ");
 						scanf("%lf", &angulo);
-						if((angulo*M_PI/180)==90 || (angulo*M_PI/180)==270)
-						printf("Nao ha secante no angulo inserido. Comece o calculo novamente.");
+							if((angulo*M_PI/180)==90 || (angulo*M_PI/180)==270)
+								printf("Nao ha secante no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Secante de %.5lf rad = %.5lf\n", angulo, Secante(angulo));
+							printf("Secante de %.5lf rad = %.5lf\n", angulo, Secante(angulo));
 					} 
 					else 
 						printf("\nOpcao invalida. Digite novamente: ");
@@ -176,18 +176,18 @@ double angulo;
 					if(resposta_unidade==1){
 						printf("\nDigite o angulo em graus: ");
 						scanf("%lf", &angulo);
-						if(angulo==0 || angulo==180 || angulo==360)
-						printf("Nao ha cossecante no angulo inserido. Comece o calculo novamente.");
+							if(angulo==0 || angulo==180 || angulo==360)
+								printf("Nao ha cossecante no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Cossecante de %.5lf graus = %.5lf\n", angulo, Cossecante(angulo * M_PI / 180));
+							printf("Cossecante de %.5lf graus = %.5lf\n", angulo, Cossecante(angulo * M_PI / 180));
 					}
 					else if(resposta_unidade==2){
 						printf("\nDigite o angulo em rad: ");
 						scanf("%lf", &angulo);
-						if(angulo==0 || (angulo*M_PI/180)==180 || (angulo*M_PI/180)==360)
-						printf("Nao ha cossecante no angulo inserido. Comece o calculo novamente.");
+							if(angulo==0 || (angulo*M_PI/180)==180 || (angulo*M_PI/180)==360)
+								printf("Nao ha cossecante no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Cossecante de %.5lf rad = %.5lf\n", angulo, Cossecante(angulo));
+							printf("Cossecante de %.5lf rad = %.5lf\n", angulo, Cossecante(angulo));
 					} 
 					else 
 						printf("\nOpcao invalida. Digite novamente: ");
@@ -204,18 +204,18 @@ double angulo;
 					if(resposta_unidade==1){
 						printf("\nDigite o angulo em graus: ");
 						scanf("%lf", &angulo);
-						if(angulo==0 || angulo==180 || angulo==360)
-						printf("Nao ha cotangente no angulo inserido. Comece o calculo novamente.");
+							if(angulo==0 || angulo==180 || angulo==360)
+								printf("Nao ha cotangente no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Cotangente de %.5lf graus = %.5lf\n", angulo, Cotangente(angulo * M_PI / 180));
+							printf("Cotangente de %.5lf graus = %.5lf\n", angulo, Cotangente(angulo * M_PI / 180));
 					}
 					else if(resposta_unidade==2){
 						printf("\nDigite o angulo em rad: ");
 						scanf("%lf", &angulo);
-						if(angulo==0 || (angulo*M_PI/180)==180 || (angulo*M_PI/180)==360)
-						printf("Nao ha cotangente no angulo inserido. Comece o calculo novamente.");
+							if(angulo==0 || (angulo*M_PI/180)==180 || (angulo*M_PI/180)==360)
+								printf("Nao ha cotangente no angulo inserido. Comece o calculo novamente.");
 						else
-						printf("Cotangente de %.5lf rad = %.5lf\n", angulo, Cotangente(angulo));
+							printf("Cotangente de %.5lf rad = %.5lf\n", angulo, Cotangente(angulo));
 					} 
 					else 
 						printf("\nOpcao invalida. Digite novamente: ");
